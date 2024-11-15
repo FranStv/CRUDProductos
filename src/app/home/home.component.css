@@ -1,0 +1,11 @@
+.center-msj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh; 
+    color: blue;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  

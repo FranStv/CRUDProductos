@@ -1,0 +1,51 @@
+<mat-toolbar class="color-barra">
+</mat-toolbar>
+<div class="center-card">
+    <mat-card class="card-container">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Bievenido</mat-card-title>
+            <mat-card-subtitle>Ingrese Credenciales</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content class="example-full-width">
+
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                  @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                    <mat-error>Por favor ingresa un email valido</mat-error>
+                  }
+                  @if (emailFormControl.hasError('required')) {
+                    <mat-error>El email es <strong>requerido</strong></mat-error>
+                  }
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Ingresa tu contraseña</mat-label>
+                    <input matInput  [(ngModel)]="password" name="password" [type]="hide() ? 'password' : 'text'" />
+                    <button
+                      mat-icon-button
+                      matSuffix
+                      (click)="clickEvent($event)"
+                      [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide()"
+                    >
+                      <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+                  @if(loginError){
+                  <mat-error class="login-error">
+                    Credenciales incorrectas, por favor intente de nuevo
+                </mat-error>
+            }
+                  <div class="boton">
+                    <button mat-flat-button (click)="login()">Ingresar</button>
+                  </div>
+              </form>
+
+          </mat-card-content>
+    </mat-card>
+
+
+</div>
