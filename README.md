@@ -8,10 +8,10 @@ Este proyecto Angular se centra en el consumo de una API de terceros [EscuelaJS 
 - Tabla de elementos con paginación, filtro y ordenamiento.
 - Acciones: Editar, Ver y Borrar.
 ## Uso
--Iniciar la aplicación con ``` ng serve ```
--Ingresar el correo y contraseña correspondientes a un usuario registrado en el Api
--Toca el menu desplegable al lado del avatar para salir.
--Haz click en la fila de nombre o ID para ordenar la tabla.
--Escribe algo en el campo de texto arriba de la tabla para buscar algo.
--Usa el desplegable y las fechas abajo de la tabla para poder acceder a las funciones de paginación.
--Usa los botones de Ver, Editar y Eliminar para poder ver,editar y borrar un elemento de la tabla.
+- Iniciar la aplicación con ``` ng serve ```
+- Ingresar el correo y contraseña correspondientes a un usuario registrado en el Api
+- Toca el menu desplegable al lado del avatar para salir.
+- Haz click en la fila de nombre o ID para ordenar la tabla.
+- Escribe algo en el campo de texto arriba de la tabla para buscar algo.
+- Usa el desplegable y las fechas abajo de la tabla para poder acceder a las funciones de paginación.
+- Usa los botones de Ver, Editar y Eliminar para poder ver,editar y borrar un elemento de la tabla.
