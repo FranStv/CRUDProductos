@@ -1,0 +1,15 @@
+.image-container {
+    width: 50px;
+    height: 50px;
+    overflow: hidden; /* Oculta el contenido sobrante si es necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 5px; /* Opcional: Añade bordes redondeados */
+  }

@@ -8,4 +8,14 @@
   .example-spacer {
     flex: 1 1 auto;
   }
-  
+  .example-header-image {
+    background-size: cover;
+  }
+  .avatar{
+    width: 50px; /* Ajusta el tamaño del avatar */
+  height: 50px; /* Ajusta el tamaño del avatar */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del círculo */
+  border: 2px solid #ccc; /* Añade un borde (opcional) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+  }
